@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Docker | Technical Documentation</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="">
+    <link rel="preload" href="/tech-docs/assets/css/0.styles.ab8b8f79.css" as="style"><link rel="preload" href="/tech-docs/assets/js/app.dfb115a1.js" as="script"><link rel="preload" href="/tech-docs/assets/js/2.51172f79.js" as="script"><link rel="preload" href="/tech-docs/assets/js/11.1707451e.js" as="script"><link rel="prefetch" href="/tech-docs/assets/js/10.0b5c1f39.js"><link rel="prefetch" href="/tech-docs/assets/js/12.d8737bf4.js"><link rel="prefetch" href="/tech-docs/assets/js/13.8f6a049e.js"><link rel="prefetch" href="/tech-docs/assets/js/14.670943a7.js"><link rel="prefetch" href="/tech-docs/assets/js/15.1e01142a.js"><link rel="prefetch" href="/tech-docs/assets/js/16.940ede35.js"><link rel="prefetch" href="/tech-docs/assets/js/17.879aff14.js"><link rel="prefetch" href="/tech-docs/assets/js/18.075d1e0c.js"><link rel="prefetch" href="/tech-docs/assets/js/19.59eb65f3.js"><link rel="prefetch" href="/tech-docs/assets/js/20.2bef0596.js"><link rel="prefetch" href="/tech-docs/assets/js/21.fbaa3c96.js"><link rel="prefetch" href="/tech-docs/assets/js/22.7b3e6b4b.js"><link rel="prefetch" href="/tech-docs/assets/js/23.12a2d88c.js"><link rel="prefetch" href="/tech-docs/assets/js/24.998c7ab9.js"><link rel="prefetch" href="/tech-docs/assets/js/25.005bc2bd.js"><link rel="prefetch" href="/tech-docs/assets/js/26.1049df5b.js"><link rel="prefetch" href="/tech-docs/assets/js/27.326561bf.js"><link rel="prefetch" href="/tech-docs/assets/js/28.ac41bf72.js"><link rel="prefetch" href="/tech-docs/assets/js/29.7825b409.js"><link rel="prefetch" href="/tech-docs/assets/js/3.ab45f5d0.js"><link rel="prefetch" href="/tech-docs/assets/js/30.fafc98be.js"><link rel="prefetch" href="/tech-docs/assets/js/31.26eaac52.js"><link rel="prefetch" href="/tech-docs/assets/js/4.a266f6b6.js"><link rel="prefetch" href="/tech-docs/assets/js/5.6bf111ce.js"><link rel="prefetch" href="/tech-docs/assets/js/6.9130cd55.js"><link rel="prefetch" href="/tech-docs/assets/js/7.8db61e36.js"><link rel="prefetch" href="/tech-docs/assets/js/8.c6a0dac0.js"><link rel="prefetch" href="/tech-docs/assets/js/9.8cc6a757.js">
+    <link rel="stylesheet" href="/tech-docs/assets/css/0.styles.ab8b8f79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/tech-docs/" class="home-link router-link-active"><!----> <span class="site-name">Technical Documentation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/tech-docs/" aria-current="page" class="sidebar-link">Contents</a></li><li><a href="/tech-docs/android.html" class="sidebar-link">Android</a></li><li><a href="/tech-docs/armbian.html" class="sidebar-link">Armbian</a></li><li><a href="/tech-docs/aws.html" class="sidebar-link">Amazon Web Service</a></li><li><a href="/tech-docs/bluetooth.html" class="sidebar-link">Bluetooth</a></li><li><a href="/tech-docs/cryptography.html" class="sidebar-link">Cryptography</a></li><li><a href="/tech-docs/database.html" class="sidebar-link">Databases</a></li><li><a href="/tech-docs/docker.html" aria-current="page" class="active sidebar-link">Docker</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#build-base-container-image-for-python-application" class="sidebar-link">Build Base Container Image For Python Application</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#build-application-image" class="sidebar-link">Build Application Image</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#create-pod-for-grouping-containers" class="sidebar-link">Create Pod For Grouping Containers</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#delete-left-over-winsz-files-of-podman-stop-command" class="sidebar-link">Delete Left-over winsz Files of Podman Stop Command</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#systemd-unit-file-for-starting-stopping-container-pod" class="sidebar-link">Systemd Unit File For Starting/Stopping Container Pod</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#get-container-id-in-shell-script" class="sidebar-link">Get Container ID in Shell Script</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#run-docker-with-user-privillege" class="sidebar-link">Run Docker with user privillege</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#podman" class="sidebar-link">Podman</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#mariadb-on-docker" class="sidebar-link">MariaDb on Docker</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#docker-unifi-base" class="sidebar-link">Docker UniFi Base</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#docker-host-networking" class="sidebar-link">Docker Host Networking</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#docker-macvlan-networking" class="sidebar-link">Docker Macvlan Networking</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#build-container-image-of-dnsmasq-application" class="sidebar-link">Build Container Image Of dnsmasq Application</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#tensorflow-2-0-docker-setup" class="sidebar-link">Tensorflow 2.0 Docker Setup</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#various-notes" class="sidebar-link">Various Notes</a></li><li class="sidebar-sub-header"><a href="/tech-docs/docker.html#references" class="sidebar-link">References</a></li></ul></li><li><a href="/tech-docs/electronics.html" class="sidebar-link">Electronics Notes</a></li><li><a href="/tech-docs/git.html" class="sidebar-link">Git Notes</a></li><li><a href="/tech-docs/hardware.html" class="sidebar-link">Hardware</a></li><li><a href="/tech-docs/javascript.html" class="sidebar-link">JavaScript</a></li><li><a href="/tech-docs/linux.html" class="sidebar-link">Linux Notes</a></li><li><a href="/tech-docs/ml.html" class="sidebar-link">Machine Learning</a></li><li><a href="/tech-docs/nginx.html" class="sidebar-link">NginX</a></li><li><a href="/tech-docs/programming.html" class="sidebar-link">Programming</a></li><li><a href="/tech-docs/python.html" class="sidebar-link">Python Programming</a></li><li><a href="/tech-docs/rpi.html" class="sidebar-link">Raspberry Pi</a></li><li><a href="/tech-docs/rust.html" class="sidebar-link">Rust Programming Language</a></li><li><a href="/tech-docs/stm32/" class="sidebar-link">STM32</a></li><li><a href="/tech-docs/links.html" class="sidebar-link">Various Links</a></li><li><a href="/tech-docs/vim.html" class="sidebar-link">VIM</a></li><li><a href="/tech-docs/webapp.html" class="sidebar-link">Web Application</a></li><li><a href="/tech-docs/yocto-project.html" class="sidebar-link">Yocto Project</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="docker"><a href="#docker" class="header-anchor">#</a> Docker</h1> <h2 id="build-base-container-image-for-python-application"><a href="#build-base-container-image-for-python-application" class="header-anchor">#</a> Build Base Container Image For Python Application</h2> <div class="custom-block tip"><p class="custom-block-title">Note</p> <p>Make sure <code>runc</code> is in your path:<br> <code>export PATH=${PATH}:/usr/lib/cri-o-runc/sbin</code></p></div> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">container</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>buildah from alpine:latest<span class="token variable">)</span></span>
+buildah run <span class="token variable">$container</span> -- apk <span class="token function">add</span> --update --no-cache python3 py3-paho-mqtt <span class="token punctuation">\</span>
+  py3-flask py3-cryptography py3-gunicorn
+buildah run <span class="token variable">$container</span> -- pip3 <span class="token function">install</span> --no-cache-dir pymysql python_jwt
+buildah config --cmd python3 <span class="token variable">$container</span>
+buildah commit <span class="token variable">$container</span> mypython3
+buildah <span class="token function">rm</span> <span class="token variable">$container</span>
+</code></pre></div><h2 id="build-application-image"><a href="#build-application-image" class="header-anchor">#</a> Build Application Image</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">container</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>buildah from mypython3:3.7.5<span class="token variable">)</span></span>
+buildah copy <span class="token variable">$container</span> /application/src/ /opt/app/
+buildah config --port <span class="token number">8000</span> <span class="token variable">$container</span>
+buildah config --workingdir /opt/app <span class="token variable">$container</span>
+buildah config --cmd <span class="token string">&quot;gunicorn --bind 0.0.0.0:8000 flask_app:app&quot;</span> <span class="token variable">$container</span>
+buildah commit <span class="token variable">$container</span> myapp
+buildah <span class="token function">rm</span> <span class="token variable">$container</span>
+</code></pre></div><h2 id="create-pod-for-grouping-containers"><a href="#create-pod-for-grouping-containers" class="header-anchor">#</a> Create Pod For Grouping Containers</h2> <div class="language-sh extra-class"><pre class="language-sh"><code>podman pod create --name<span class="token operator">=</span>podname -p <span class="token number">1880</span>-9000:1880-9000
+
+podman run --name mariadb -e <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span>secret <span class="token punctuation">\</span>
+    --pod podname <span class="token punctuation">\</span>
+    -v /data/mariadb:/var/lib/mysql <span class="token punctuation">\</span>
+    -v /config/my.cnf:/etc/mysql/conf.d/mydocker.cnf <span class="token punctuation">\</span>
+    -d mariadb:latest
+
+podman run --name mqtt --pod podname -d eclipse-mosquitto
+
+podman run --name myapp --pod podname -d myapp_image
+</code></pre></div><p>After that, just use <code>podman pod start podname</code> and <code>podman pod stop podname</code>
+commands.</p> <h2 id="delete-left-over-winsz-files-of-podman-stop-command"><a href="#delete-left-over-winsz-files-of-podman-stop-command" class="header-anchor">#</a> Delete Left-over <code>winsz</code> Files of Podman Stop Command</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">find</span> <span class="token variable">${CONTAINERS_DIR}</span>/vfs-containers/ -type p -name winsz -exec <span class="token function">rm</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">\</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="systemd-unit-file-for-starting-stopping-container-pod"><a href="#systemd-unit-file-for-starting-stopping-container-pod" class="header-anchor">#</a> Systemd Unit File For Starting/Stopping Container Pod</h2> <div class="language- extra-class"><pre class="language-text"><code>[Unit]
+Description=Podman in Systemd
+
+[Service]
+Restart=on-failure
+ExecStartPre=/usr/bin/rm -f /%t/%n-pid /%t/%n-cid
+ExecStart=/usr/bin/podman run --conmon-pidfile  **/%t/%n-pid**  --cidfile /%t/%n-cid -d alpine:latest top
+ExecStop=/usr/bin/sh -c &quot;/usr/bin/podman rm -f `cat /%t/%n-cid`&quot;
+KillMode=none
+Type=forking
+PIDFile=**/%t/%n-pid**
+
+[Install]
+WantedBy=multi-user.target
+</code></pre></div><h2 id="get-container-id-in-shell-script"><a href="#get-container-id-in-shell-script" class="header-anchor">#</a> Get Container ID in Shell Script</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">containerId</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>podman inspect mqtt <span class="token operator">|</span> jq -r <span class="token string">'.[0].Id'</span><span class="token variable">)</span></span>
+</code></pre></div><h2 id="run-docker-with-user-privillege"><a href="#run-docker-with-user-privillege" class="header-anchor">#</a> Run Docker with user privillege</h2> <p><code>docker run -u $(id -u):$(id -g) args...</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>docker run --name tf2 -it <span class="token punctuation">\</span>
+  -u <span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -u<span class="token variable">)</span></span><span class="token builtin class-name">:</span><span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -g<span class="token variable">)</span></span> <span class="token punctuation">\</span>
+  -v /data/ml_works/content:/content <span class="token punctuation">\</span>
+  -v /data/ml_works/notebooks:/tf/notebooks <span class="token punctuation">\</span>
+  -p <span class="token number">8888</span>:8888 <span class="token punctuation">\</span>
+  tensorflow/tensorflow:latest-py3-jupyter
+
+<span class="token comment"># Run /bin/bash as root</span>
+docker <span class="token builtin class-name">exec</span> -it -u <span class="token number">0</span>:0 tf2 <span class="token function">bash</span>
+
+docker start -i -a tf2
+
+</code></pre></div><h2 id="podman"><a href="#podman" class="header-anchor">#</a> Podman</h2> <div class="language-sh extra-class"><pre class="language-sh"><code>apk <span class="token function">add</span> --no-cache py3-virtualenv py3-flask py3-pillow py3-gunicorn <span class="token punctuation">\</span>
+  py3-cryptography py3-jwt py3-paho-mqtt py3-mysqlclient
+
+addgroup -g <span class="token number">1000</span> -S appgroup
+adduser -S -G appgroup -u <span class="token number">1000</span> appuser
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>podman commit --format<span class="token operator">=</span>docker --change <span class="token assign-left variable">ENTRYPOINT</span><span class="token operator">=</span>/usr/bin/python3 <span class="token punctuation">\</span>
+  my_python3 my_python3
+</code></pre></div><h2 id="mariadb-on-docker"><a href="#mariadb-on-docker" class="header-anchor">#</a> MariaDb on Docker</h2> <p>Run server:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>podman run --name mariadb --rm -e <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span>mysecret <span class="token punctuation">\</span>
+  -v /data/mariadb:/var/lib/mysql <span class="token punctuation">\</span>
+  -v /config/mydocker.cnf:/etc/mysql/conf.d/mydocker.cnf <span class="token punctuation">\</span>
+  -p <span class="token number">3306</span>:3306 -d mariadb:latest
+</code></pre></div><h2 id="docker-unifi-base"><a href="#docker-unifi-base" class="header-anchor">#</a> Docker UniFi Base</h2> <div class="language-sh extra-class"><pre class="language-sh"><code>docker create <span class="token punctuation">\</span>
+--name<span class="token operator">=</span>unifi <span class="token punctuation">\</span>
+-e <span class="token assign-left variable">PGID</span><span class="token operator">=</span><span class="token number">1000</span> -e <span class="token assign-left variable">PUID</span><span class="token operator">=</span><span class="token number">1000</span> <span class="token punctuation">\</span>
+-p <span class="token number">3478</span>:3478/udp <span class="token punctuation">\</span>
+-p <span class="token number">10001</span>:10001/udp <span class="token punctuation">\</span>
+-p <span class="token number">8080</span>:8080 <span class="token punctuation">\</span>
+-p <span class="token number">8081</span>:8081 <span class="token punctuation">\</span>
+-p <span class="token number">8443</span>:8443 <span class="token punctuation">\</span>
+-p <span class="token number">8843</span>:8843 <span class="token punctuation">\</span>
+-p <span class="token number">8880</span>:8880 <span class="token punctuation">\</span>
+-p <span class="token number">6789</span>:6789 <span class="token punctuation">\</span>
+-v unifi_data:/config <span class="token punctuation">\</span>
+linuxserver/unifi
+</code></pre></div><h2 id="docker-host-networking"><a href="#docker-host-networking" class="header-anchor">#</a> Docker Host Networking</h2> <div class="language-sh extra-class"><pre class="language-sh"><code>docker run <span class="token punctuation">\</span>
+-d <span class="token punctuation">\</span>
+--name plex <span class="token punctuation">\</span>
+--network<span class="token operator">=</span>host <span class="token punctuation">\</span>
+-e <span class="token assign-left variable">TZ</span><span class="token operator">=</span><span class="token string">&quot;&lt;timezone&gt;&quot;</span> <span class="token punctuation">\</span>
+-e <span class="token assign-left variable">PLEX_CLAIM</span><span class="token operator">=</span><span class="token string">&quot;&lt;claimToken&gt;&quot;</span> <span class="token punctuation">\</span>
+-v <span class="token operator">&lt;</span>path/to/plex/database<span class="token operator">&gt;</span>:/config <span class="token punctuation">\</span>
+-v <span class="token operator">&lt;</span>path/to/transcode/temp<span class="token operator">&gt;</span>:/transcode <span class="token punctuation">\</span>
+-v <span class="token operator">&lt;</span>path/to/media<span class="token operator">&gt;</span>:/data <span class="token punctuation">\</span>
+plexinc/pms-docker
+</code></pre></div><h2 id="docker-macvlan-networking"><a href="#docker-macvlan-networking" class="header-anchor">#</a> Docker Macvlan Networking</h2> <div class="language-sh extra-class"><pre class="language-sh"><code>docker run <span class="token punctuation">\</span>
+-d <span class="token punctuation">\</span>
+--name plex <span class="token punctuation">\</span>
+--network<span class="token operator">=</span>physical <span class="token punctuation">\</span>
+--ip<span class="token operator">=</span><span class="token operator">&lt;</span>IPAddress<span class="token operator">&gt;</span> <span class="token punctuation">\</span>
+-e <span class="token assign-left variable">TZ</span><span class="token operator">=</span><span class="token string">&quot;&lt;timezone&gt;&quot;</span> <span class="token punctuation">\</span>
+-e <span class="token assign-left variable">PLEX_CLAIM</span><span class="token operator">=</span><span class="token string">&quot;&lt;claimToken&gt;&quot;</span> <span class="token punctuation">\</span>
+-h <span class="token operator">&lt;</span><span class="token environment constant">HOSTNAME</span><span class="token operator">&gt;</span> <span class="token punctuation">\</span>
+-v <span class="token operator">&lt;</span>path/to/plex/database<span class="token operator">&gt;</span>:/config <span class="token punctuation">\</span>
+-v <span class="token operator">&lt;</span>path/to/transcode/temp<span class="token operator">&gt;</span>:/transcode <span class="token punctuation">\</span>
+-v <span class="token operator">&lt;</span>path/to/media<span class="token operator">&gt;</span>:/data <span class="token punctuation">\</span>
+plexinc/pms-docker
+</code></pre></div><h2 id="build-container-image-of-dnsmasq-application"><a href="#build-container-image-of-dnsmasq-application" class="header-anchor">#</a> Build Container Image Of <code>dnsmasq</code> Application</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">container</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>buildah from alpine:latest<span class="token variable">)</span></span>
+buildah run <span class="token variable">$container</span> -- apk <span class="token function">add</span> --update --no-cache dnsmasq
+buildah config --port <span class="token number">53</span> <span class="token variable">$container</span>
+buildah config --cmd <span class="token string">&quot;dnsmasq -d&quot;</span> <span class="token variable">$container</span>
+buildah commit <span class="token variable">$container</span> dnsmasq
+buildah <span class="token function">rm</span> <span class="token variable">$container</span>
+</code></pre></div><h2 id="tensorflow-2-0-docker-setup"><a href="#tensorflow-2-0-docker-setup" class="header-anchor">#</a> Tensorflow 2.0 Docker Setup</h2> <p><code>docker exec -it -u 0:0 tf2 bash</code></p> <p><code>apt update &amp;&amp; apt upgrade</code></p> <p><code>apt install git wget protobuf-compiler python3-pil python3-lxml python3-tk</code></p> <p><code>pip install Cython contextlib2 pillow lxml matplotlib pycocotools pandas seaborn sklearn pyyaml h5py</code></p> <p><code>apt install python3-opencv</code></p> <h2 id="various-notes"><a href="#various-notes" class="header-anchor">#</a> Various Notes</h2> <ul><li>You can start pods using systemd services but you have to add
+<code>RemainAfterExit=yes</code> to the <code>[Service]</code> section.</li></ul> <h2 id="references"><a href="#references" class="header-anchor">#</a> References</h2> <ul><li>https://www.redhat.com/sysadmin/podman-shareable-systemd-services</li> <li>https://github.com/containers/libpod/issues/4433</li> <li><a href="https://github.com/wsargent/docker-cheat-sheet" target="_blank" rel="noopener noreferrer">Docker cheatsheet<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/tech-docs/database.html" class="prev">
+        Databases
+      </a></span> <span class="next"><a href="/tech-docs/electronics.html">
+        Electronics Notes
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/tech-docs/assets/js/app.dfb115a1.js" defer></script><script src="/tech-docs/assets/js/2.51172f79.js" defer></script><script src="/tech-docs/assets/js/11.1707451e.js" defer></script>
+  </body>
+</html>

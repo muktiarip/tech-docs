@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>STM32 Programming Notes | Technical Documentation</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="">
+    <link rel="preload" href="/tech-docs/assets/css/0.styles.ab8b8f79.css" as="style"><link rel="preload" href="/tech-docs/assets/js/app.dfb115a1.js" as="script"><link rel="preload" href="/tech-docs/assets/js/2.51172f79.js" as="script"><link rel="preload" href="/tech-docs/assets/js/28.ac41bf72.js" as="script"><link rel="prefetch" href="/tech-docs/assets/js/10.0b5c1f39.js"><link rel="prefetch" href="/tech-docs/assets/js/11.1707451e.js"><link rel="prefetch" href="/tech-docs/assets/js/12.d8737bf4.js"><link rel="prefetch" href="/tech-docs/assets/js/13.8f6a049e.js"><link rel="prefetch" href="/tech-docs/assets/js/14.670943a7.js"><link rel="prefetch" href="/tech-docs/assets/js/15.1e01142a.js"><link rel="prefetch" href="/tech-docs/assets/js/16.940ede35.js"><link rel="prefetch" href="/tech-docs/assets/js/17.879aff14.js"><link rel="prefetch" href="/tech-docs/assets/js/18.075d1e0c.js"><link rel="prefetch" href="/tech-docs/assets/js/19.59eb65f3.js"><link rel="prefetch" href="/tech-docs/assets/js/20.2bef0596.js"><link rel="prefetch" href="/tech-docs/assets/js/21.fbaa3c96.js"><link rel="prefetch" href="/tech-docs/assets/js/22.7b3e6b4b.js"><link rel="prefetch" href="/tech-docs/assets/js/23.12a2d88c.js"><link rel="prefetch" href="/tech-docs/assets/js/24.998c7ab9.js"><link rel="prefetch" href="/tech-docs/assets/js/25.005bc2bd.js"><link rel="prefetch" href="/tech-docs/assets/js/26.1049df5b.js"><link rel="prefetch" href="/tech-docs/assets/js/27.326561bf.js"><link rel="prefetch" href="/tech-docs/assets/js/29.7825b409.js"><link rel="prefetch" href="/tech-docs/assets/js/3.ab45f5d0.js"><link rel="prefetch" href="/tech-docs/assets/js/30.fafc98be.js"><link rel="prefetch" href="/tech-docs/assets/js/31.26eaac52.js"><link rel="prefetch" href="/tech-docs/assets/js/4.a266f6b6.js"><link rel="prefetch" href="/tech-docs/assets/js/5.6bf111ce.js"><link rel="prefetch" href="/tech-docs/assets/js/6.9130cd55.js"><link rel="prefetch" href="/tech-docs/assets/js/7.8db61e36.js"><link rel="prefetch" href="/tech-docs/assets/js/8.c6a0dac0.js"><link rel="prefetch" href="/tech-docs/assets/js/9.8cc6a757.js">
+    <link rel="stylesheet" href="/tech-docs/assets/css/0.styles.ab8b8f79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/tech-docs/" class="home-link router-link-active"><!----> <span class="site-name">Technical Documentation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/tech-docs/" aria-current="page" class="sidebar-link">Contents</a></li><li><a href="/tech-docs/android.html" class="sidebar-link">Android</a></li><li><a href="/tech-docs/armbian.html" class="sidebar-link">Armbian</a></li><li><a href="/tech-docs/aws.html" class="sidebar-link">Amazon Web Service</a></li><li><a href="/tech-docs/bluetooth.html" class="sidebar-link">Bluetooth</a></li><li><a href="/tech-docs/cryptography.html" class="sidebar-link">Cryptography</a></li><li><a href="/tech-docs/database.html" class="sidebar-link">Databases</a></li><li><a href="/tech-docs/docker.html" class="sidebar-link">Docker</a></li><li><a href="/tech-docs/electronics.html" class="sidebar-link">Electronics Notes</a></li><li><a href="/tech-docs/git.html" class="sidebar-link">Git Notes</a></li><li><a href="/tech-docs/hardware.html" class="sidebar-link">Hardware</a></li><li><a href="/tech-docs/javascript.html" class="sidebar-link">JavaScript</a></li><li><a href="/tech-docs/linux.html" class="sidebar-link">Linux Notes</a></li><li><a href="/tech-docs/ml.html" class="sidebar-link">Machine Learning</a></li><li><a href="/tech-docs/nginx.html" class="sidebar-link">NginX</a></li><li><a href="/tech-docs/programming.html" class="sidebar-link">Programming</a></li><li><a href="/tech-docs/python.html" class="sidebar-link">Python Programming</a></li><li><a href="/tech-docs/rpi.html" class="sidebar-link">Raspberry Pi</a></li><li><a href="/tech-docs/rust.html" class="sidebar-link">Rust Programming Language</a></li><li><a href="/tech-docs/stm32/" aria-current="page" class="sidebar-link">STM32</a></li><li><a href="/tech-docs/links.html" class="sidebar-link">Various Links</a></li><li><a href="/tech-docs/vim.html" class="sidebar-link">VIM</a></li><li><a href="/tech-docs/webapp.html" class="sidebar-link">Web Application</a></li><li><a href="/tech-docs/yocto-project.html" class="sidebar-link">Yocto Project</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="stm32-programming-notes"><a href="#stm32-programming-notes" class="header-anchor">#</a> STM32 Programming Notes</h1> <h2 id="starting-stm32-programming"><a href="#starting-stm32-programming" class="header-anchor">#</a> Starting STM32 Programming</h2> <p>Its always best to start with an existing project, then adapt that. If you
+don't have a suitable existing project then I suggest:</p> <ol><li>Create a makefile that builds a simple hello world style application for
+your hardware - without adding in the FreeRTOS source files yet.</li> <li>Ensure your project builds and runs as expected. That will give you a known
+good starting point before you add in more source code.</li> <li>Add the FreeRTOS source files to your project. You will find information on
+the files that are needed, and the include paths that must be set, on the following page: http://www.freertos.org/Creating-a-new-FreeRTOS-project.html . The port layer files you need are in the FreeRTOS/source/portable/gcc/ARM_CM0 directory (assuming this is a Cortex-M0 part?).</li> <li>You will need a FreeRTOSConfig.h file. The one used by the official
+FreeRTOS STM32F051 demo will probably be a good starting point.</li> <li>Make sure the project builds, and you can still run the hello world
+application.</li> <li>Now create your FreeRTOS tasks - here is a good place to start:
+<a href="http://www.freertos.org/Hardware-independent-RTOS-example.html" target="_blank" rel="noopener noreferrer">Hardware independent FreeRTOS example<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ol> <h2 id="stm32-hal-includes"><a href="#stm32-hal-includes" class="header-anchor">#</a> STM32 HAL Includes</h2> <div class="language- extra-class"><pre class="language-text"><code>&lt;stm32f1xx_hal.h&gt;
+  stm32f1xx_hal_conf.h
+
+&lt;stm32f1xx_hal_def.h&gt;
+  &lt;CMSIS::stm32f1xx.h&gt;
+
+&lt;stm32f1xx_hal_PPP.h&gt;
+  &lt;stm32f1xx_hal_def.h&gt;
+
+main.h
+  &lt;stm32f1xx_hal.h&gt;
+
+PPP.h
+  main.h
+
+PPP.c
+  PPP.h
+
+main.c
+  main.h
+  PPP.h
+
+stm32f1xx_hal_msp.c
+  main.h
+
+stm32f1xx_it.c
+  main.h
+  stm32f1xx_it.h
+</code></pre></div><h2 id="flashing-bluepill-using-openocd"><a href="#flashing-bluepill-using-openocd" class="header-anchor">#</a> Flashing BluePill using openocd</h2> <div class="language- extra-class"><pre class="language-text"><code>openocd \
+--file /data/embed/openocd-conf/stm32-bluepill.cfg \
+--command &quot;program build/spi_a.elf verify reset exit&quot;
+</code></pre></div><h2 id="enable-disable-swd-debugging"><a href="#enable-disable-swd-debugging" class="header-anchor">#</a> Enable/Disable SWD Debugging</h2> <p>In file <code>stm32f1xx_hal_msp.c</code>:</p> <p><code>__HAL_AFIO_REMAP_SWJ_NOJTAG(); -- Enable SWD debugging.</code></p> <p><code>__HAL_AFIO_REMAP_SWJ_DISABLE(); --&gt; Disable SWD debugging</code></p> <h2 id="debugging-stm32-app"><a href="#debugging-stm32-app" class="header-anchor">#</a> Debugging STM32 App</h2> <ul><li><p>Compile with -g option of gcc compiler.</p></li> <li><p>In terminal #1:</p></li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code>openocd -f /data/embed/openocd-conf/openocdstm32-bluepill.cfg
+</code></pre></div><ul><li>In terminal #2:</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code>/venv/gdbgui/bin/gdbgui -n -g <span class="token punctuation">\</span>
+  /embed/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gdb <span class="token punctuation">\</span>
+  path/to/stm32_program.elf
+</code></pre></div><ul><li>Using web browser:
+<ul><li>Open URL: <code>http://127.0.0.1:5000</code></li> <li>In gdb command line, type:
+<ul><li><code>target remote localhost:3333</code></li> <li><code>monitor reset halt</code></li> <li><code>continue</code></li></ul></li> <li>Add breakpoints as necessary using <code>breakpoint</code> gdb command</li></ul></li></ul> <h2 id="stm32f1-unbrick"><a href="#stm32f1-unbrick" class="header-anchor">#</a> STM32F1 Unbrick</h2> <ul><li>Hold reset button while booting.</li> <li>Connect openocd to target</li> <li>On another terminal, telnet to <code>localhost:4444</code>, then send command <code>reset halt</code></li> <li>Release reset button.</li> <li>On telnet session, send command <code>stm32f1x mass_erase 0</code>, then <code>exit</code></li></ul> <p>If you unable to program STM32F1 chip, hold reset button before flashing, run flashing software and immediately release reset button.</p> <h2 id="debugging-stm32-application-using-qemu"><a href="#debugging-stm32-application-using-qemu" class="header-anchor">#</a> Debugging STM32 Application using Qemu</h2> <ul><li>Compile with -g option of gcc compiler.</li></ul> <div class="language- extra-class"><pre class="language-text"><code>/data/venv/python3.6/bin/gdbgui -n -g \
+    /data/embed/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gdb \
+    demos/uart_echo_int/main.elf
+
+/usr/local/bin/qemu-system-arm -M stm32-p103 -gdb tcp::3333 -S \
+    -kernel demos/uart_echo_int/main.bin
+</code></pre></div><ul><li>Open web browser to url: <code>http://localhost:5000/</code> then
+<code>gdbgui/&gt; connect to localhost:3333</code></li></ul> <h2 id="system-workbench-for-stm32-notes"><a href="#system-workbench-for-stm32-notes" class="header-anchor">#</a> System Workbench for STM32 Notes</h2> <p>If debugging can't be executed, set this:</p> <p><code>reset_config none separate</code></p> <h2 id="sd-card-module"><a href="#sd-card-module" class="header-anchor">#</a> SD Card Module</h2> <ul><li>Blue MISO -&gt; BPL#31:PA6</li> <li>Green SCK -&gt; BPL#30:PA5</li> <li>Red MOSI -&gt; BPL#32:PA7</li> <li>Brown CS -&gt; BPL#29:PA4</li> <li>Yellow 3.3 volt -&gt; BPL#</li> <li>Orange GND -&gt; BPL#</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/tech-docs/assets/js/app.dfb115a1.js" defer></script><script src="/tech-docs/assets/js/2.51172f79.js" defer></script><script src="/tech-docs/assets/js/28.ac41bf72.js" defer></script>
+  </body>
+</html>
